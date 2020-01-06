@@ -13,7 +13,7 @@ node{
           sh "docker login -u byta3262 -p ${dockerHubPwd}"
 }
     sh 'sudo docker tag customer byta3262/customer:latest'
-    sh 'sudo docker push byta3262/customer
+    sh 'sudo docker push byta3262/customer'
   }
         
 }
