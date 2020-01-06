@@ -12,8 +12,8 @@ node{
       withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerHubPwd')]) {
           sh "docker login -u byta3262 -p ${dockerHubPwd}"
 }
-    sh 'sudo docker tag customerappgateway byta3262/customerappgateway:latest'
-    sh 'sudo docker push byta3262/customerappgateway'
+    sh 'sudo docker tag customer byta3262/customer:latest'
+    sh 'sudo docker push byta3262/customer
   }
         
 }
